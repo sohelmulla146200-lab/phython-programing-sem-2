@@ -1,0 +1,18 @@
+# dicitionary stores book name and price with updating book price 
+"""
+Created on Mon Mar  9 15:13:35 2026
+
+@author: sohel
+"""
+
+library = {}
+
+library ["python"] = 250
+library ["maths"] = 200
+library ["physics"] = 350
+print("Dictionary after adding elements:") 
+print(library)
+
+library ["python"] = 350
+library ["maths"] = 300
+library ["pysics"] = 250
