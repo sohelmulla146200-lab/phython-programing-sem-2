@@ -1,0 +1,14 @@
+# student present in b oth class
+"""
+Created on Mon Mar  9 15:32:11 2026
+
+@author: sohel
+"""
+
+classA = set(map(int, input("Enterroll no. of present student (space-separated): ").split()))
+classB = set(map(int, input("Enter roll no. of present student (space-separated): ").split()))
+
+common_student = classA | classB 
+intersection_class = classA & classB
+print("common  student", common_student)
+print("student presednt in both class", intersection_class)
