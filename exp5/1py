@@ -1,0 +1,20 @@
+# dictionary stores book name and price with updating book price
+"""
+Created on Mon Mar 9 14:45:31 2026
+
+@author: Sohel
+"""
+
+library = {}
+
+library["python"] = 250
+library["Mathematics"] = 300
+library["Mechanics"] = 150
+print("Dictionary after adding elements:")
+print(library)
+
+library["python"] = 350
+library["Mathematics"] = 375
+library["Mechanics"] = 200
+print("\nDictionary after updating a value:")
+print(library)
