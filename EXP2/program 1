@@ -1,0 +1,14 @@
+# Program to display personal details
+"""
+Created on Thu Apr  2 00:18:53 2026
+
+@author: SOHEL
+"""
+
+name = "SOHEL MULLA"
+address = "Satara, Maharashtra, India"
+contact = "9359280443"
+
+print("name:", name)
+print(" address:", address)
+print("contact:", contact) 
