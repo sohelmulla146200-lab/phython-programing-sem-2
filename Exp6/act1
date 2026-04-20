@@ -1,0 +1,41 @@
+#Store daily expenses in a file and calculate total monthly expense.
+"""
+Created on Mon Mar 23 15:14:03 2026
+
+@author: SOHEL
+"""
+
+file_name = "daily_expenses.txt"
+
+with open(file_name, "w") as file:
+    file.write("Daily Expenses (in Rs):\n")
+    file.write("100\n")
+    file.write("250\n")
+    file.write("300\n")
+    file.write("150\n")
+    file.write("200\n")
+print(f"Data written to {file_name} successfully.\n")
+
+
+
+print("Reading file content:")
+with open(file_name, "r") as file:
+    content = file.read()
+    print(content)
+
+with open(file_name, "a") as file:
+    file.write("400\n")
+
+print("After appending a new expense:")
+with open(file_name, "r") as file:
+    print(file.read())
+
+total = 0
+
+with open(file_name, "r") as file:
+    lines = file.readlines()
+
+    for line in lines[1:]:   
+        total += int(line.strip())
+
+print("Total Monthly Expense (Rs):", total)
