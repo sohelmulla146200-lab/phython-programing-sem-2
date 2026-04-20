@@ -1,0 +1,37 @@
+#Create a student attendance file and append new records.
+"""
+Created on Mon Mar 23 15:30:46 2026
+
+@author: SOHEL
+"""
+
+
+file_name = "attendance.txt"
+
+with open(file_name, "w") as file:
+    file.write("Student Attendance Record:\n")
+    file.write("1. Arman - Present\n")
+    file.write("2. Rahul - Absent\n")
+    file.write("3. Sneha - Present\n")
+print(f"Data written to {file_name} successfully.\n")
+
+
+
+print("Reading file content:")
+with open(file_name, "r") as file:
+    content = file.read()
+    print(content)
+
+
+with open(file_name, "a") as file:
+    file.write("4. Priya - Present\n")
+    file.write("5. Amit - Absent\n")
+
+print("After appending new records:")
+with open(file_name, "r") as file:
+    print(file.read())
+
+with open(file_name, "r") as file:
+    lines = file.readlines()
+
+print("Total number of students:", len(lines) - 1)
