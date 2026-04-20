@@ -1,0 +1,18 @@
+# Add new stock in shop inventory
+"""
+Created on Mon Mar 9 14:45:31 2026
+
+@author:Sohel
+"""
+
+inventory = {}
+
+inventory["pen"] = 10
+inventory["notebook"] = 25
+inventory["pencil"] = 7
+print("Original inventory.", inventory)
+print(inventory)
+
+inventory["eraser"] = 5
+print("\nUpdated inventory:")
+print(inventory)
