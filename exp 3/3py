@@ -1,0 +1,15 @@
+# Code for EMI calculation
+"""
+Created on Mon Feb 16 15:37:34 2026
+
+@author: Sohel
+"""
+principal=float(input("Enter principal amount:"))
+monthlyinterest=float(input("Enter monthly interest rate (in %_):"))
+year=float(input("Enter loan tenure (in years):"))
+
+months = year * 12
+monthlyinterest = monthlyinterest / 100
+
+EMI = (principal * monthlyinterest *(1 + monthlyinterest) ** months) / ((1 + monthlyinterest) ** months - 1)
+print("Your EMI is:", round(EMI, 2))
