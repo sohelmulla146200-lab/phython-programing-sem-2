@@ -1,0 +1,14 @@
+# Program to display personal details
+"""
+Created on Thu Apr  2 00:18:53 2026
+
+@author: SOHEL MULLA
+"""
+
+name = "Nikhil Nikam"
+address = "Satara, Maharashtra, India"
+contact = "8669173388"
+
+print("name:", name)
+print(" address:", address)
+print("contact:", contact) 
