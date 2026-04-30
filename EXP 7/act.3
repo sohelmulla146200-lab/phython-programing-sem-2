@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 30 20:36:24 2026
+
+@author: sohel
+"""
+
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def calculate_grade(self):
+        if self.marks >= 90:
+            grade = "A"
+        elif self.marks >= 75:
+            grade = "B"
+        elif self.marks >= 50:
+            grade = "C"
+        else:
+            grade = "Fail"
+        print(f"{self.name} Grade: {grade}")
+
+# Example
+stu = Student("Rahul", 82)
+stu.calculate_grade()
