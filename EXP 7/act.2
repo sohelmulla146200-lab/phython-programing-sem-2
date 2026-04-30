@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 30 20:40:18 2026
+
+@author: sohel
+"""
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def calculate_salary(self, bonus):
+        total = self.salary + bonus
+        print(f"Total Salary (with bonus): {total}")
+
+# Example
+emp = Employee("Ali", 20000)
+emp.calculate_salary(5000)
