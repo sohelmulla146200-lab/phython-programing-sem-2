@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 30 20:47:11 2026
+
+@author: sohel
+"""
+
+# Example list
+
+numbers = [10, 20, 30]
+
+
+
+#Division operation
+
+a=int(input("Enter a numerator"))
+
+b = int(input("Enter a denominator: "))
+
+result = a / b
+
+print("Division result", result)
+
+#Accessing a list element
+
+print(numbers)
+
+index = int(input("Enter index to access in the list [0,1,2). "))
+
+print("Element at index", index, "is", numbers[index])
+
+
+
+print("Error: Division by zero is not allowed.")
+
+
+
+print("Error: Index out of range for the list ")
+
+
+print("Error: Invalid input. Please enter an integer")
+      
+
+print("Program execution completed.")
