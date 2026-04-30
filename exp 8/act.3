@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 30 20:44:34 2026
+
+@author: sohel
+"""
+
+try:
+    bill = float(input("Enter total bill: "))
+    people = int(input("Enter number of people: "))
+    result = bill / people
+    print("Each person pays:", result)
+except ZeroDivisionError:
+    print("Cannot divide by zero people!")
+except ValueError:
+    print("Invalid input!")
