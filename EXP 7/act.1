@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 30 20:33:10 2026
+
+@author: sohel
+"""
+
+class BankAccount:
+    def __init__(self, name, balance=0):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited: {amount}, New Balance: {self.balance}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient balance!")
+        else:
+            self.balance -= amount
+            print(f"Withdrawn: {amount}, Remaining Balance: {self.balance}")
+
+# Example
+acc = BankAccount("Sohel", 1000)
+acc.deposit(500)
+acc.withdraw(300)
